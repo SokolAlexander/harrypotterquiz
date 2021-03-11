@@ -1,53 +1,46 @@
 import Artyom from "artyom.js";
 
+
+function openMap() {
+  const map = document.getElementById("map-base");
+  map.classList.add("active");
+
+  const modal = document.getElementById("hiddenModalStart");
+
+  setTimeout(() => {
+    modal?.classList?.remove("hidden");
+  }, 5000);
+}
 //initialization of speech recognition starts here
 const artyom = new Artyom();
 var commands = [
   {
-    indexes: ["up to no good"],
-    action: function () {
-      console.log('heard you')
-    },
-  },
-  {
-    indexes: ["mischief managed"],
+    indexes: ["шалость"],
     action: function () {
       console.log("heard you");
+      openMap();
     },
   },
 ];
 
-artyom.addCommands(commands);
 
 export function startContinuousArtyom() {
   artyom.fatality();
 
+  artyom.addCommands(commands);
+
   setTimeout(function () {
     artyom
       .initialize({
-        lang: "en-GB",
-        continuous: true,
+        lang: "ru-RU",
+        continuous: false,
         listen: true,
         speed: 1,
+        debug: true,
+        soundex: true,
       })
       .then(function () {
         console.log("Ready to work !");
-        openMap();
       });
   }, 250);
-}
-
-// startContinuousArtyom();
-
-
-function openMap() {
-  const map = document.getElementById('map-base');
-  map.classList.add('active');
-
-  const modal = document.getElementById('hiddenModalStart');
-
-  setTimeout(() => {
-    console.log('------');
-    modal?.classList?.remove('hidden');
-  }, 5000);
 }

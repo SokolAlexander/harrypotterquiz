@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Router from "./components/Router";
 import Map from "./components/Map";
+import './speech/artyom';
 
 function App() {
   if (navigator.userAgent.indexOf("Chrome") === -1) {
