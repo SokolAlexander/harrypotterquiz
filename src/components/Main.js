@@ -33,7 +33,6 @@ export default () => {
   }, []);
 
   const handleAnswer = useCallback(() => {
-    console.log(value, answers[currentPage]);
     if (value.toUpperCase() === answers[currentPage].toUpperCase()) {
       setShowLink(true);
       setError(false);
