@@ -1,0 +1,16 @@
+.button {
+  padding: 5px 35px;
+  background-color: black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(0.96);
+}
+
+.buttonText {
+  color: white;
+	font: 20px HarryPotterRegular;
+  font-weight: 600;
+}

@@ -1,11 +1,59 @@
-.wrapper {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  flex: 1;
-  flex-grow: 1;
-  min-height: 200px;
-  max-height: 10vh;
+.question {
+  color: white;
+  /* font: 25px Satisfy, cursive; */
+  /* // font: 25px HarryPotterRegular; */
+  font: 20px Luminari, fantasy;
+  white-space: pre-wrap;
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  height: 25px;
+  padding: 10px;
+  background-color: #00000000;
+  outline: none;
+  box-shadow: none;
+  caret-color: azure;
+  font-size: medium;
+  color: white;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+
+.input::placeholder {
+  color: rgb(167, 156, 156);
+}
+
+.input:focus {
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  outline: none;
+}
+
+.error {
+  font: 25px HarryPotterRegular, cursive;
+  color: wheat;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+.rotation {
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+.title {
+  color: wheat;
+	font: 30px HarryPotterRegular;
+  font-weight: 600;
 }

@@ -3,7 +3,7 @@ import './Map.scss';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => (
   <div className="main-content">
-    <div className="map-base active">
+    <div id="map-base" className="map-base">
       <div className="footsteps footsteps-1">
         <div className="footstep left"></div>
         <div className="footstep right"></div>

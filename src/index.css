@@ -1,7 +1,18 @@
+@font-face {
+  font-family: "HarryPotterRegular";
+  src: url("./fonts/HarryPotterRegular/HarryPotterRegular.eot");
+  src: url("./fonts/HarryPotterRegular/HarryPotterRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/HarryPotterRegular/HarryPotterRegular.woff") format("woff"),
+    url("./fonts/HarryPotterRegular/HarryPotterRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9,6 +20,16 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  text-decoration: none;
+  color: wheat;
+  font-weight: bolder;
+  font-size: larger;
+  font: 30px Satisfy, cursive;
+  border: 1px solid wheat;
+  padding: 15px;
 }
